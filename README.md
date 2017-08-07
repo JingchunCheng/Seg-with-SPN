@@ -14,17 +14,14 @@ Video Result the Proposed Method
 Citing Our Paper
 -------------------------------------------
 If you find SegFlow useful in your research, please consider citing:
-
+```
 @article{DAVIS2017-6th,
-
-  author = {J. Cheng and S. Liu and Y.-H. Tsai and W.-C. Hung and S. Gupta and J. Gu and J. Kautz and S. Wang and M.-H. Yang},
-  
-  title = {Learning to Segment Instances in Videos with Spatial Propagation Network},
-  
-  journal = {The 2017 DAVIS Challenge on Video Object Segmentation - CVPR Workshops},
-  
+  author = {J. Cheng and S. Liu and Y.-H. Tsai and W.-C. Hung and S. Gupta and J. Gu and J. Kautz and S. Wang and M.-H. Yang}, 
+  title = {Learning to Segment Instances in Videos with Spatial Propagation Network}, 
+  journal = {The 2017 DAVIS Challenge on Video Object Segmentation - CVPR Workshops}, 
   year = {2017}
 }
+```
 
 
 About the Code
