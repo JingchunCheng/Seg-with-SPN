@@ -46,6 +46,7 @@ Installation
 *per-video foreground model can be trained in similar way.
 
 5. Test your models.
+
 `python infer_test_perobj.py model_iteration class_name object_id`
 
 `e.g. python infer_test_perobj.py 3000 lions 2`
