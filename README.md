@@ -46,7 +46,7 @@ Installation
 
 `mkdir models`
 
-2. Download DAVIS 2017 dataset and put it in `$Seg-with-SPN/data`.
+2. Download [DAVIS 2017 dataset](http://davischallenge.org/code.html) and put it in `$Seg-with-SPN/data`.
 
 3. Install caffe and pycaffe.
 
