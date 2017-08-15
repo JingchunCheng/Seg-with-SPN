@@ -28,6 +28,10 @@ About the Code
 -------------------------------------------
 The code released here is for foreground segmentation and instance recognition step.
 
+It contains the parent net of foreground segmentation and training files for instance recognition networks.
+
+Besides, the 'matlab_code' folder contains a simple version of our CRAF step for reference.
+
 
 Requirements
 -------------------------------------------
