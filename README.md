@@ -26,7 +26,7 @@ If you find SegFlow useful in your research, please consider citing:
 
 About the Code
 -------------------------------------------
-The code released here is for foreground segmentation and instance recognition step.
+The code released here is for foreground segmentation and instance recognition steps.
 
 It contains the parent net of foreground segmentation and training files for instance recognition networks.
 
