@@ -9,7 +9,6 @@ Check our results in this [video](https://www.youtube.com/watch?v=JMCYk9w_TyA&fe
 Contact: Jingchun Cheng (chengjingchun at gmail dot com)
 
 # Cite the Paper
--------------------------------------------
 If you find that our method is useful in your research, please cite:
 ```
 @article{DAVIS2017-6th,
@@ -21,7 +20,6 @@ If you find that our method is useful in your research, please cite:
 ```
 
 # About the Code
--------------------------------------------
 * The code released here mainly consistes of two parts in the paper: foreground segmentation and instance recognition.
 
 * It contains the parent net for foreground segmentation and training codes for instance recognition networks.
@@ -30,31 +28,35 @@ If you find that our method is useful in your research, please cite:
 
 
 # Installation Requirements
--------------------------------------------
 Install `caffe` and `pycaffe` at http://caffe.berkeleyvision.org/.
 
 
-# Demo
------------------------------------------------------
+# Testing
 * Download the [DAVIS 2017 dataset](http://davischallenge.org/code.html) and put it in the **data** folder.
 
-* Download the offline pre-trained foreground segmentation model [here](https://www.dropbox.com/s/sifnbkgrvbzkttz/PN_ResNetF.caffemodel) and put it in the **pretrained** folder.
+* Download the offline pre-trained foreground segmentation model [here](http://vllab1.ucmerced.edu/~ytsai/CVPR17/PN_ResNetF.caffemodel) and put it in the **pretrained** folder.
 
-* Train the per-object recognition model.
-
+* Test the general foreground/backgroung model.
 `cd $Seg-with-SPN/python_scripts`
+`python infer_test_fbbg.py PATH_OF_MODEL PATH_OF_RESULT VIDEO_NAME`
+`e.g. python infer_test_fbbg.py ../pretrained/PN_ResNetF.caffemodel ../results/fgbg lions`
 
+* Test the object instance model.
+`cd $Seg-with-SPN/python_scripts`
+`python infer_test_perobj.py MODEL_ITERATION VIDEO_NAME OBJECT_ID`
+For example, on the 'lions' video for the 2nd object, run:
+`python infer_test_perobj.py 3000 lions 2`
+
+* Run `example_CRAF.m` for a demo on CRAF segmentation refinement.
+
+# Training
+* Train the per-object recognition model.
+`cd $Seg-with-SPN/python_scripts`
+`python solve.py PATH_OF_MODEL PATH_OF_SOLVER`
+Foe example, on the 'choreography' video for the 1st object, run:
 `python solve.py ../pretrained/PN_ResNetF.caffemodel ../models/testnet_per_obj/choreography/solver_1.prototxt`
 
-* Test the models.
-
-`python infer_test_perobj.py model_iteration class_name object_id`
-
-`e.g. python infer_test_perobj.py 3000 lions 2`
-
-# Acknowledgement
---------------------------------------------------
-Seg-with-SPN uses the following open source code:
-* [ResNet-101](https://github.com/KaimingHe/deep-residual-networks) for initializing segmentation branch.
-
-
+# Download Our Results
+* General foreground/background segmentation
+* Instance-level object segmentation without refinement
+* Instance-level object segmentation with refinement
