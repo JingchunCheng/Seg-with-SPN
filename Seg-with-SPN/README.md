@@ -51,8 +51,8 @@ For example, on the 'lions' video for the 2nd object, run: <br />
 * Train the per-object recognition model. <br />
 `cd $Seg-with-SPN/python_scripts` <br />
 `python solve.py PATH_OF_MODEL PATH_OF_SOLVER` <br />
-Foe example, on the 'choreography' video for the 1st object, run: <br />
-`python solve.py ../pretrained/PN_ResNetF.caffemodel ../models/testnet_per_obj/choreography/solver_1.prototxt`
+Foe example, on the 'bike-trial' video for the 1st object, run: <br />
+`python solve.py ../pretrained/PN_ResNetF.caffemodel ../ResNetF/testnet_per_obj/bike-trial/solver_1.prototxt`
 
 # Download Our Results
 * General foreground/background segmentation
