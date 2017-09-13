@@ -27,20 +27,18 @@ If you find that our method is useful in your research, please cite:
 * The **matlab_code** folder contains a simple version of our CRAF step for segmentation refinement.
 
 
-# Installation Requirements
-Install `caffe` and `pycaffe` at http://caffe.berkeleyvision.org/.
+# Requirements
+* Install `caffe` and `pycaffe` at http://caffe.berkeleyvision.org/.
 
-
-# Testing
 * Download the [DAVIS 2017 dataset](http://davischallenge.org/code.html) and put it in the **data** folder.
 
 * Download the offline pre-trained foreground segmentation model [here](http://vllab1.ucmerced.edu/~ytsai/CVPR17/PN_ResNetF.caffemodel) and put it in the **pretrained** folder.
 
-* Test the general foreground/backgroung model. <br />
-`cd $Seg-with-SPN/python_scripts` <br />
-`python infer_test_fgbg.py PATH_OF_MODEL PATH_OF_RESULT VIDEO_NAME` <br />
-Foe example, on the 'lions' video, run: <br />
-`python infer_test_fgbg.py ../pretrained/PN_ResNetF.caffemodel ../results/fgbg lions`
+# Test the general foreground/backgroung model.
+
+* `cd $Seg-with-SPN/python_scripts`
+* `python infer_test_fgbg.py PATH_OF_MODEL PATH_OF_RESULT VIDEO_NAME`
+* Foe example, on the 'lions' video, run: `python infer_test_fgbg.py ../pretrained/PN_ResNetF.caffemodel ../results/fgbg lions`
 
 * Test the object instance model. <br />
 `cd $Seg-with-SPN/python_scripts` <br />
