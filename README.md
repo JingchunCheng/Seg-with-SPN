@@ -38,8 +38,8 @@ Install `caffe` and `pycaffe` at http://caffe.berkeleyvision.org/.
 
 * Test the general foreground/backgroung model. <br />
 `cd $Seg-with-SPN/python_scripts` <br />
-`python infer_test_fbbg.py PATH_OF_MODEL PATH_OF_RESULT VIDEO_NAME` <br />
-`e.g. python infer_test_fbbg.py ../pretrained/PN_ResNetF.caffemodel ../results/fgbg lions`
+`python infer_test_fgbg.py PATH_OF_MODEL PATH_OF_RESULT VIDEO_NAME` <br />
+`e.g. python infer_test_fgbg.py ../pretrained/PN_ResNetF.caffemodel ../results/fgbg lions`
 
 * Test the object instance model. <br />
 `cd $Seg-with-SPN/python_scripts` <br />
