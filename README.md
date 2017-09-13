@@ -36,24 +36,24 @@ Install `caffe` and `pycaffe` at http://caffe.berkeleyvision.org/.
 
 * Download the offline pre-trained foreground segmentation model [here](http://vllab1.ucmerced.edu/~ytsai/CVPR17/PN_ResNetF.caffemodel) and put it in the **pretrained** folder.
 
-* Test the general foreground/backgroung model.
-`cd $Seg-with-SPN/python_scripts`
-`python infer_test_fbbg.py PATH_OF_MODEL PATH_OF_RESULT VIDEO_NAME`
+* Test the general foreground/backgroung model. <br />
+`cd $Seg-with-SPN/python_scripts` <br />
+`python infer_test_fbbg.py PATH_OF_MODEL PATH_OF_RESULT VIDEO_NAME` <br />
 `e.g. python infer_test_fbbg.py ../pretrained/PN_ResNetF.caffemodel ../results/fgbg lions`
 
-* Test the object instance model.
-`cd $Seg-with-SPN/python_scripts`
-`python infer_test_perobj.py MODEL_ITERATION VIDEO_NAME OBJECT_ID`
-For example, on the 'lions' video for the 2nd object, run:
+* Test the object instance model. <br />
+`cd $Seg-with-SPN/python_scripts` <br />
+`python infer_test_perobj.py MODEL_ITERATION VIDEO_NAME OBJECT_ID` <br />
+For example, on the 'lions' video for the 2nd object, run: <br />
 `python infer_test_perobj.py 3000 lions 2`
 
 * Run `example_CRAF.m` for a demo on CRAF segmentation refinement.
 
 # Training
-* Train the per-object recognition model.
-`cd $Seg-with-SPN/python_scripts`
-`python solve.py PATH_OF_MODEL PATH_OF_SOLVER`
-Foe example, on the 'choreography' video for the 1st object, run:
+* Train the per-object recognition model. <br />
+`cd $Seg-with-SPN/python_scripts` <br />
+`python solve.py PATH_OF_MODEL PATH_OF_SOLVER` <br />
+Foe example, on the 'choreography' video for the 1st object, run: <br />
 `python solve.py ../pretrained/PN_ResNetF.caffemodel ../models/testnet_per_obj/choreography/solver_1.prototxt`
 
 # Download Our Results
