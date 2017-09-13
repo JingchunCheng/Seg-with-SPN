@@ -6,6 +6,8 @@ Learning to Segment Instances in Videos with Spatial Propagation Network
 
 Check our results in this [video](https://www.youtube.com/watch?v=JMCYk9w_TyA&feature=youtu.be).
 
+Contact: Jingchun Cheng (chengjingchun at gmail dot com)
+
 # Cite the Paper
 -------------------------------------------
 If you find that our method is useful in your research, please cite:
@@ -17,13 +19,12 @@ If you find that our method is useful in your research, please cite:
   year = {2017}
 }
 ```
-Contact: Jingchun Cheng (chengjingchun at gmail dot com)
 
 # About the Code
 -------------------------------------------
 * The code released here mainly consistes of two parts in the paper: foreground segmentation and instance recognition.
 
-* It contains the parent net of foreground segmentation and training codes for instance recognition networks.
+* It contains the parent net for foreground segmentation and training codes for instance recognition networks.
 
 * The **matlab_code** folder contains a simple version of our CRAF step for segmentation refinement.
 
@@ -33,29 +34,19 @@ Contact: Jingchun Cheng (chengjingchun at gmail dot com)
 Install `caffe` and `pycaffe` at http://caffe.berkeleyvision.org/.
 
 
-# Installation
+# Demo
 -----------------------------------------------------
-1. Download the offline pre-trained foreground segmentation model.
+* Download the [DAVIS 2017 dataset](http://davischallenge.org/code.html) and put it in the **data** folder.
 
-`cd $Seg-with-SPN`
+* Download the offline pre-trained foreground segmentation model [here](https://www.dropbox.com/s/sifnbkgrvbzkttz/PN_ResNetF.caffemodel) and put it in the **pretrained** folder.
 
-`cd ResNetF`
-
-`wget https://www.dropbox.com/s/sifnbkgrvbzkttz/PN_ResNetF.caffemodel`
-
-`mkdir models`
-
-2. Download [DAVIS 2017 dataset](http://davischallenge.org/code.html) and put it in **Seg-with-SPN/data**.
-
-3. Train per-object recognition model.
+* Train the per-object recognition model.
 
 `cd $Seg-with-SPN/python_scripts`
 
-`python solve.py ../ResNetF/PN_ResNetF.caffemodel ../ResNetF/testnet_per_obj/choreography/solver_1.prototxt`
+`python solve.py ../pretrained/PN_ResNetF.caffemodel ../models/testnet_per_obj/choreography/solver_1.prototxt`
 
-*per-video foreground model can be trained in similar way.
-
-4. Test your models.
+* Test the models.
 
 `python infer_test_perobj.py model_iteration class_name object_id`
 
