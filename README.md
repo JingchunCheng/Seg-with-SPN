@@ -58,3 +58,9 @@ For example, on the 'lions' video for the 2nd object, run: <br />
 * General foreground/background segmentation [here](http://vllab1.ucmerced.edu/~ytsai/CVPR17/fgbg.zip)
 * Instance-level object segmentation without refinement [here](http://vllab1.ucmerced.edu/~ytsai/CVPR17/perobj.zip)
 * Final Instance-level object segmentation with refinement [here](http://vllab1.ucmerced.edu/~ytsai/CVPR17/final_result.zip)
+
+# Note
+The model and code are available for non-commercial research purposes only.
+
+# Log
+* 09/2017: code and model released
