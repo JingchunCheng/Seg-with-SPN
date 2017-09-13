@@ -1,21 +1,14 @@
 Learning to Segment Instances in Videos with Spatial Propagation Network
 =========================================
-Introduction
------------------------------------------
 ![alt text](http://vllab1.ucmerced.edu/~ytsai/CVPR17/cvpr17_workshop_git.png)
-
-We propose a deep learning-based framework for instance-level object segmentation. Our method mainly consists of three steps. First, We train a generic model based on ResNet-101 for foreground/background segmentations. Second, based on this generic model, we fine-tune it to learn instance-level models and segment individual objects by using augmented object annotations in first frames of test videos. To distinguish different instances in the same video, we compute a pixel-level score map for each object from these instance-level models. Each score map indicates the objectness likelihood and is only computed within the foreground mask obtained in the first step. To further refine this per frame score map, we learn a spatial propagation network. This network aims to learn how to propagate a coarse segmentation mask spatially based on the pairwise similarities in each frame. In addition, we apply a filter on the refined score map that aims to recognize the best connected region using spatial and temporal consistencies in the video. Finally, we decide the instance-level object segmentation in each video by comparing score maps of different instances.
 
 [This paper](http://davischallenge.org/challenge2017/papers/DAVIS-Challenge-6th-Team.pdf) is now available at the 2017 DAVIS-Challenge website.
 
-Video Result the Proposed Method
--------------------------------------------
-[Final Result](https://www.youtube.com/watch?v=JMCYk9w_TyA&feature=youtu.be)
+Check our results in this [video](https://www.youtube.com/watch?v=JMCYk9w_TyA&feature=youtu.be).
 
-
-Citing Our Paper
+# Cite the Paper
 -------------------------------------------
-If you find SegFlow useful in your research, please consider citing:
+If you find that our method is useful in your research, please cite:
 ```
 @article{DAVIS2017-6th,
   author = {J. Cheng and S. Liu and Y.-H. Tsai and W.-C. Hung and S. Gupta and J. Gu and J. Kautz and S. Wang and M.-H. Yang}, 
@@ -24,25 +17,25 @@ If you find SegFlow useful in your research, please consider citing:
   year = {2017}
 }
 ```
+Contact: Jingchun Cheng (chengjingchun at gmail dot com)
 
-
-About the Code
+# About the Code
 -------------------------------------------
-The code released here is for foreground segmentation and instance recognition steps.
+* The code released here mainly consistes of two parts in the paper: foreground segmentation and instance recognition.
 
-It contains the parent net of foreground segmentation and training files for instance recognition networks.
+* It contains the parent net of foreground segmentation and training codes for instance recognition networks.
 
-Besides, the 'matlab_code' folder contains a simple version of our CRAF step for reference.
+* The **matlab_code** folder contains a simple version of our CRAF step for segmentation refinement.
 
 
-Requirements
+# Installation Requirements
 -------------------------------------------
-Requirements for `caffe` and `pycaffe`.
+Install `caffe` and `pycaffe` at http://caffe.berkeleyvision.org/.
 
 
-Installation
+# Installation
 -----------------------------------------------------
-1. Download offline trained foreground segmentation model.
+1. Download the offline pre-trained foreground segmentation model.
 
 `cd $Seg-with-SPN`
 
@@ -52,11 +45,9 @@ Installation
 
 `mkdir models`
 
-2. Download [DAVIS 2017 dataset](http://davischallenge.org/code.html) and put it in `$Seg-with-SPN/data`.
+2. Download [DAVIS 2017 dataset](http://davischallenge.org/code.html) and put it in **Seg-with-SPN/data**.
 
-3. Install caffe and pycaffe.
-
-4. Train per-object recognition model.
+3. Train per-object recognition model.
 
 `cd $Seg-with-SPN/python_scripts`
 
@@ -64,16 +55,13 @@ Installation
 
 *per-video foreground model can be trained in similar way.
 
-5. Test your models.
+4. Test your models.
 
 `python infer_test_perobj.py model_iteration class_name object_id`
 
 `e.g. python infer_test_perobj.py 3000 lions 2`
 
-
-
-
-Acknowledgement
+# Acknowledgement
 --------------------------------------------------
 Seg-with-SPN uses the following open source code:
 * [ResNet-101](https://github.com/KaimingHe/deep-residual-networks) for initializing segmentation branch.
