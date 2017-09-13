@@ -1,0 +1,14 @@
+train_net: "../ResNetF/testnet_fgbg/choreography/train.prototxt"
+display: 20
+average_loss: 20
+lr_policy: "fixed"
+base_lr:   1e-10
+momentum: 0.99
+iter_size: 1
+max_iter: 30000
+
+weight_decay: 0.0005
+snapshot: 3000
+snapshot_prefix: "../ResNetF/models/choreography_fgbg"
+
+test_initialization: false

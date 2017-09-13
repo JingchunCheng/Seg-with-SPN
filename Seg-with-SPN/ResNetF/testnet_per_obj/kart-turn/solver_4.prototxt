@@ -1,0 +1,14 @@
+train_net: "../ResNetF/testnet_per_obj/kart-turn/train_4.prototxt"
+display: 20
+average_loss: 20
+lr_policy: "fixed"
+base_lr:   1e-10
+momentum: 0.99
+iter_size: 1
+max_iter: 30000
+
+weight_decay: 0.0005
+snapshot: 3000
+snapshot_prefix: "../ResNetF/models/kart-turn_obj_4"
+
+test_initialization: false
