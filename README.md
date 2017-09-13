@@ -32,6 +32,15 @@ If you find that our method is useful in your research, please cite:
 
 * Download the [DAVIS 2017 dataset](http://davischallenge.org/code.html) and put it in the **data** folder.
 
+* Download the pre-trained foreground/background model [here](http://vllab1.ucmerced.edu/~ytsai/CVPR17/PN_ResNetF.caffemodel) and put it in the **pretrained** folder.
+
+# Training
+* Train the per-object recognition model. <br />
+`cd $Seg-with-SPN/python_scripts` <br />
+`python solve.py PATH_OF_MODEL PATH_OF_SOLVER` <br />
+Foe example, on the 'choreography' video for the 1st object, run: <br />
+`python solve.py ../pretrained/PN_ResNetF.caffemodel ../ResNetF/testnet_per_obj/choreography/solver_1.prototxt`
+
 # Testing
 * Test the general foreground/backgroung model. <br />
 `cd $Seg-with-SPN/python_scripts` <br />
@@ -47,14 +56,7 @@ For example, on the 'lions' video for the 2nd object, run: <br />
 
 * Run `example_CRAF.m` for a demo on CRAF segmentation refinement.
 
-# Training
-* Train the per-object recognition model. <br />
-`cd $Seg-with-SPN/python_scripts` <br />
-`python solve.py PATH_OF_MODEL PATH_OF_SOLVER` <br />
-Foe example, on the 'choreography' video for the 1st object, run: <br />
-`python solve.py ../pretrained/PN_ResNetF.caffemodel ../models/testnet_per_obj/choreography/solver_1.prototxt`
-
 # Download Our Results
-* General foreground/background segmentation
-* Instance-level object segmentation without refinement
-* Instance-level object segmentation with refinement
+* General foreground/background segmentation [here](http://vllab1.ucmerced.edu/~ytsai/CVPR17/fgbg.zip)
+* Instance-level object segmentation without refinement [here](http://vllab1.ucmerced.edu/~ytsai/CVPR17/perobj.zip)
+* Final Instance-level object segmentation with refinement [here](http://vllab1.ucmerced.edu/~ytsai/CVPR17/final_result.zip)
