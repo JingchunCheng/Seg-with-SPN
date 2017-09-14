@@ -52,9 +52,9 @@ Foe example, on the 'lions' video, run: <br />
 For example, on the 'lions' video for the 2nd object, run: <br />
 `python infer_test_perobj.py 3000 lions 2`
 
-* Run `example_CRAF.m` for a demo on CRAF segmentation refinement.
+* Run `example_CRAF.m` in the **matlab_code** folder for a demo on CRAF segmentation refinement.
 
-## Download Our Results
+## Download Our Segmentation Results on DAVIS 2017 Challenge
 * General foreground/background segmentation [here](http://vllab1.ucmerced.edu/~ytsai/CVPR17/fgbg.zip)
 * Instance-level object segmentation without refinement [here](http://vllab1.ucmerced.edu/~ytsai/CVPR17/perobj.zip)
 * Final Instance-level object segmentation with refinement [here](http://vllab1.ucmerced.edu/~ytsai/CVPR17/final_result.zip)
