@@ -2,7 +2,7 @@
 
 ![alt text](http://vllab1.ucmerced.edu/~ytsai/CVPR17/cvpr17_workshop_git.png)
 
-[This paper](http://davischallenge.org/challenge2017/papers/DAVIS-Challenge-6th-Team.pdf) is now available at the 2017 DAVIS-Challenge website.
+[This paper](http://davischallenge.org/challenge2017/papers/DAVIS-Challenge-6th-Team.pdf) is available at the 2017 DAVIS Challenge website.
 
 Check our results in this [video](https://www.youtube.com/watch?v=JMCYk9w_TyA&feature=youtu.be).
 
@@ -54,7 +54,7 @@ For example, on the 'lions' video for the 2nd object, run: <br />
 
 * Run `example_CRAF.m` in the **matlab_code** folder for a demo on CRAF segmentation refinement.
 
-## Download Our Segmentation Results on DAVIS 2017 Challenge
+## Download Our Segmentation Results on 2017 DAVIS Challenge
 * General foreground/background segmentation [here](http://vllab1.ucmerced.edu/~ytsai/CVPR17/fgbg.zip)
 * Instance-level object segmentation without refinement [here](http://vllab1.ucmerced.edu/~ytsai/CVPR17/perobj.zip)
 * Final instance-level object segmentation with refinement [here](http://vllab1.ucmerced.edu/~ytsai/CVPR17/final_result.zip)
