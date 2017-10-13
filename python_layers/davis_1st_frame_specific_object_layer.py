@@ -34,7 +34,7 @@ class DAVIS1stFrmSpecificObjLayer(caffe.Layer):
         self.aug_params = np.array(params['aug_params']) #( aug_num, max_scale, max_rotate, max_translation, flip)
         self.H         = 480
         self.W         = 854
-        self.obj_id    = params.get('obj_id')
+        self.obj_id    = params.get('num_obj')
 
 
         # two tops: data and label
