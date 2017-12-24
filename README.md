@@ -1,6 +1,6 @@
 # Learning to Segment Instances in Videos with Spatial Propagation Network
 
-![alt text](http://vllab.ucmerced.edu/ytsai/CVPR17/cvpr17_workshop_git.png)
+![alt text](http://vllab1.ucmerced.edu/~ytsai/CVPR17/cvpr17_workshop_git.png)
 
 [This paper](http://davischallenge.org/challenge2017/papers/DAVIS-Challenge-6th-Team.pdf) is available at the 2017 DAVIS Challenge website.
 
