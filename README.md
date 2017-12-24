@@ -1,6 +1,6 @@
 # Learning to Segment Instances in Videos with Spatial Propagation Network
 
-![alt text](http://vllab1.ucmerced.edu/~ytsai/CVPR17/cvpr17_workshop_git.png)
+![alt text](http://vllab.ucmerced.edu/ytsai/CVPR17/cvpr17_workshop_git.png)
 
 [This paper](http://davischallenge.org/challenge2017/papers/DAVIS-Challenge-6th-Team.pdf) is available at the 2017 DAVIS Challenge website.
 
@@ -32,7 +32,7 @@ If you find that our method is useful in your research, please cite:
 
 * Download the [DAVIS 2017 dataset](http://davischallenge.org/code.html) and put it in the **data** folder.
 
-* Download the pre-trained foreground/background model [here](http://vllab1.ucmerced.edu/~ytsai/CVPR17/PN_ResNetF.caffemodel) and put it in the **pretrained** folder.
+* Download the pre-trained foreground/background model [here](http://vllab.ucmerced.edu/ytsai/CVPR17/PN_ResNetF.caffemodel) and put it in the **pretrained** folder.
 
 ## Training
 * Train the per-object recognition model. <br />
@@ -55,9 +55,9 @@ For example, on the 'lions' video for the 2nd object, run: <br />
 * Run `example_CRAF.m` in the **matlab_code** folder for a demo on CRAF segmentation refinement.
 
 ## Download Our Segmentation Results on 2017 DAVIS Challenge
-* General foreground/background segmentation [here](http://vllab1.ucmerced.edu/~ytsai/CVPR17/fgbg.zip)
-* Instance-level object segmentation without refinement [here](http://vllab1.ucmerced.edu/~ytsai/CVPR17/perobj.zip)
-* Final instance-level object segmentation with refinement [here](http://vllab1.ucmerced.edu/~ytsai/CVPR17/final_result.zip)
+* General foreground/background segmentation [here](http://vllab.ucmerced.edu/ytsai/CVPR17/fgbg.zip)
+* Instance-level object segmentation without refinement [here](http://vllab.ucmerced.edu/ytsai/CVPR17/perobj.zip)
+* Final instance-level object segmentation with refinement [here](http://vllab.ucmerced.edu/ytsai/CVPR17/final_result.zip)
 
 ## Note
 The model and code are available for non-commercial research purposes only.
