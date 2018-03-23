@@ -63,3 +63,4 @@ For example, on the 'lions' video for the 2nd object, run: <br />
 The model and code are available for non-commercial research purposes only.
 
 * 09/2017: code and model released
+* 03/2018: pre-trained model updated
